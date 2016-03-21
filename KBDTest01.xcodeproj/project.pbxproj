@@ -16,6 +16,8 @@
 		DEB013831CA057F9000AF631 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB013811CA057F9000AF631 /* LaunchScreen.storyboard */; };
 		DEB0138E1CA057F9000AF631 /* KBDTest01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB0138D1CA057F9000AF631 /* KBDTest01Tests.m */; };
 		DEB013991CA057F9000AF631 /* KBDTest01UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB013981CA057F9000AF631 /* KBDTest01UITests.m */; };
+		DEB013AE1CA05A3D000AF631 /* KeyboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB013AD1CA05A3D000AF631 /* KeyboardViewController.m */; };
+		DEB013B21CA05A3D000AF631 /* KBD Ext01.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DEB013AA1CA05A3D000AF631 /* KBD Ext01.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +35,28 @@
 			remoteGlobalIDString = DEB0136C1CA057F9000AF631;
 			remoteInfo = KBDTest01;
 		};
+		DEB013B01CA05A3D000AF631 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEB013651CA057F9000AF631 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEB013A91CA05A3D000AF631;
+			remoteInfo = "KBD Ext01";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DEB013B61CA05A3D000AF631 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DEB013B21CA05A3D000AF631 /* KBD Ext01.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DEB0136D1CA057F9000AF631 /* KBDTest01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KBDTest01.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +76,10 @@
 		DEB013941CA057F9000AF631 /* KBDTest01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KBDTest01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB013981CA057F9000AF631 /* KBDTest01UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KBDTest01UITests.m; sourceTree = "<group>"; };
 		DEB0139A1CA057FA000AF631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB013AA1CA05A3D000AF631 /* KBD Ext01.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KBD Ext01.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB013AC1CA05A3D000AF631 /* KeyboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeyboardViewController.h; sourceTree = "<group>"; };
+		DEB013AD1CA05A3D000AF631 /* KeyboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyboardViewController.m; sourceTree = "<group>"; };
+		DEB013AF1CA05A3D000AF631 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEB013A71CA05A3D000AF631 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -86,6 +120,7 @@
 				DEB0136F1CA057F9000AF631 /* KBDTest01 */,
 				DEB0138C1CA057F9000AF631 /* KBDTest01Tests */,
 				DEB013971CA057F9000AF631 /* KBDTest01UITests */,
+				DEB013AB1CA05A3D000AF631 /* KBD Ext01 */,
 				DEB0136E1CA057F9000AF631 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +131,7 @@
 				DEB0136D1CA057F9000AF631 /* KBDTest01.app */,
 				DEB013891CA057F9000AF631 /* KBDTest01Tests.xctest */,
 				DEB013941CA057F9000AF631 /* KBDTest01UITests.xctest */,
+				DEB013AA1CA05A3D000AF631 /* KBD Ext01.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,6 +179,16 @@
 			path = KBDTest01UITests;
 			sourceTree = "<group>";
 		};
+		DEB013AB1CA05A3D000AF631 /* KBD Ext01 */ = {
+			isa = PBXGroup;
+			children = (
+				DEB013AC1CA05A3D000AF631 /* KeyboardViewController.h */,
+				DEB013AD1CA05A3D000AF631 /* KeyboardViewController.m */,
+				DEB013AF1CA05A3D000AF631 /* Info.plist */,
+			);
+			path = "KBD Ext01";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,10 +199,12 @@
 				DEB013691CA057F9000AF631 /* Sources */,
 				DEB0136A1CA057F9000AF631 /* Frameworks */,
 				DEB0136B1CA057F9000AF631 /* Resources */,
+				DEB013B61CA05A3D000AF631 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DEB013B11CA05A3D000AF631 /* PBXTargetDependency */,
 			);
 			name = KBDTest01;
 			productName = KBDTest01;
@@ -199,6 +247,23 @@
 			productReference = DEB013941CA057F9000AF631 /* KBDTest01UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		DEB013A91CA05A3D000AF631 /* KBD Ext01 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB013B31CA05A3D000AF631 /* Build configuration list for PBXNativeTarget "KBD Ext01" */;
+			buildPhases = (
+				DEB013A61CA05A3D000AF631 /* Sources */,
+				DEB013A71CA05A3D000AF631 /* Frameworks */,
+				DEB013A81CA05A3D000AF631 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KBD Ext01";
+			productName = "KBD Ext01";
+			productReference = DEB013AA1CA05A3D000AF631 /* KBD Ext01.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,6 +275,7 @@
 				TargetAttributes = {
 					DEB0136C1CA057F9000AF631 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 4KL73BPFQ7;
 					};
 					DEB013881CA057F9000AF631 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -218,6 +284,10 @@
 					DEB013931CA057F9000AF631 = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = DEB0136C1CA057F9000AF631;
+					};
+					DEB013A91CA05A3D000AF631 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 4KL73BPFQ7;
 					};
 				};
 			};
@@ -237,6 +307,7 @@
 				DEB0136C1CA057F9000AF631 /* KBDTest01 */,
 				DEB013881CA057F9000AF631 /* KBDTest01Tests */,
 				DEB013931CA057F9000AF631 /* KBDTest01UITests */,
+				DEB013A91CA05A3D000AF631 /* KBD Ext01 */,
 			);
 		};
 /* End PBXProject section */
@@ -260,6 +331,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		DEB013921CA057F9000AF631 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB013A81CA05A3D000AF631 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -296,6 +374,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEB013A61CA05A3D000AF631 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB013AE1CA05A3D000AF631 /* KeyboardViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -308,6 +394,11 @@
 			isa = PBXTargetDependency;
 			target = DEB0136C1CA057F9000AF631 /* KBDTest01 */;
 			targetProxy = DEB013951CA057F9000AF631 /* PBXContainerItemProxy */;
+		};
+		DEB013B11CA05A3D000AF631 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEB013A91CA05A3D000AF631 /* KBD Ext01 */;
+			targetProxy = DEB013B01CA05A3D000AF631 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -415,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KBDTest01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.setminami.KBDTest01;
@@ -426,6 +518,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KBDTest01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.setminami.KBDTest01;
@@ -481,6 +574,30 @@
 			};
 			name = Release;
 		};
+		DEB013B41CA05A3D000AF631 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "KBD Ext01/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.setminami.KBDTest01.KBD-Ext01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DEB013B51CA05A3D000AF631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "KBD Ext01/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.setminami.KBDTest01.KBD-Ext01";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -514,6 +631,14 @@
 			buildConfigurations = (
 				DEB013A41CA057FA000AF631 /* Debug */,
 				DEB013A51CA057FA000AF631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEB013B31CA05A3D000AF631 /* Build configuration list for PBXNativeTarget "KBD Ext01" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB013B41CA05A3D000AF631 /* Debug */,
+				DEB013B51CA05A3D000AF631 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
